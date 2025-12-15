@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a, .pagination strong {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination strong {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+a.logo-link, a.logo-link:hover {
+    text-decoration: none;
+}
+
+.breadcrumbs {
+    font-size:.9rem;
+    margin:.5rem 0 .75rem
+}
+
+.breadcrumbs a {
+    margin-right: 0;
+}
+
+.breadcrumbs ol {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.35rem
+}
+
+.breadcrumbs li::after {
+    content:"/";
+    margin-left:.15rem
+}
+
+.breadcrumbs li:last-child::after {
+    content:""
+}
+
+.author-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    /* Visual size; intrinsic width/height are still set on the tag */
+    width: 150px;
+    height: 150px;
+}
+
+.author-meta {
+    flex: 1;
+}
+.author-name {
+    font-weight: bold;
+}
+.author-bio  {
+   line-height: 1.45;
+}
+
+/* Generic text alignment utilities */
+.align-left    { text-align: left; }
+.align-center  { text-align: center; }
+.align-right   { text-align: right; }
+.align-justify { text-align: justify; text-justify: inter-word; }

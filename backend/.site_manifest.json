@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "404.html",
+    "index.html",
+    "posts/test-post.html"
+  ],
+  "plugins_enabled": [],
+  "static_plugins": {}
+}
