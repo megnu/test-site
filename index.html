@@ -9,6 +9,7 @@
   
 
   <link rel="stylesheet" href="https://example.com/static/frontend/css/frontend.css"/>
+    <link rel="stylesheet" href="https://example.com/static/frontend/css/search.css"/>
 
     <link rel="canonical" href="https://example.com/"/>
 
@@ -23,6 +24,21 @@
 
 
 
+    <script>
+      // Minimize FOUC on search page 
+      (function () {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('s')) {
+            document.documentElement.classList.add('search-preparing');
+          }
+        } catch (e) {
+        }
+      })();
+    </script>
+    <style>
+      .search-preparing main { opacity: 0; }
+    </style>
 
 
   
@@ -87,6 +103,7 @@ data-is-homepage="1">
 
   <footer>
       <p>© 2025 testing_site</p>
+      <script src="https://example.com/static/frontend/js/search_init.js" defer></script>
   </footer>
 
   
