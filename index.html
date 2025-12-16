@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog Posts</title>
+
+  
+
+  <link rel="stylesheet" href="https://example.com/static/frontend/css/frontend.css"/>
+    <link rel="stylesheet" href="https://example.com/static/frontend/css/search.css"/>
+
+    <link rel="canonical" href="https://example.com/"/>
+
+
+
+  <meta property="og:title" content="Blog Posts">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">  
+  <meta property="og:site_name" content="testing_site">
+
+
+
+
+    <script>
+      // Minimize FOUC on search page 
+      (function () {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('s')) {
+            document.documentElement.classList.add('search-preparing');
+          }
+        } catch (e) {
+        }
+      })();
+    </script>
+    <style>
+      .search-preparing main { opacity: 0; }
+    </style>
+
+
+  
+</head>
+<body
+  data-title-sep="-"
+  data-posts-index-title="Blog Posts"
+data-is-homepage="1">
+
+  
+
+
+  <header class="site-header">
+
+
+      <span class="site-title">testing_site</span>
+
+  </header>
+
+
+
+
+
+
+
+
+
+  <div class="content-wrap ">
+    <main>
+
+<h1 class="page-title">
+  Blog Posts
+</h1>
+<p>Site URL: https://example.com</p>
+<p>Base URL: /</p>
+
+<div class="post-container">
+  <article>
+    <h2><a href="https://example.com/posts/test-post.html">test post</a></h2>
+    <div class="meta-strip">
+        <span class="meta-strip-item">
+          <time datetime="2025-12-15T19:50:49+00:00">December 15, 2025 at 7:50 PM</time>
+        </span>
+    </div>
+
+    
+
+      <p>test</p>
+
+    <p><a href="https://example.com/posts/test-post.html" class="read-more">Read more</a></p>
+  </article>
+</div>
+
+
+
+    </main>
+
+  </div>
+
+
+
+
+  <footer>
+      <p>© 2025 testing_site</p>
+      <script src="https://example.com/static/frontend/js/search_init.js" defer></script>
+  </footer>
+
+  
+</body>
+</html>

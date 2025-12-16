@@ -1,0 +1,132 @@
+/* static/frontend/css/search.css */
+
+.search-wrap {
+  max-width: 960px;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+}
+
+/* Make the search bar row sticky and horizontal */
+.search-bar-row {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  padding: .5rem 0 1rem;
+  display: flex;
+  align-items: stretch;
+  gap: .5rem;
+  will-change: top;
+  contain: paint;
+}
+
+/* Input grows, button keeps natural width */
+.search-input {
+  flex: 1 1 auto;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: .65rem .75rem;
+  border: 1px solid #ccc;
+  /* border-radius: .5rem; */
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.search-input:focus {
+  border-color: #94a3b8; /* slate-300 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, .15); /* soft blue ring */
+}
+
+/* Button sits flush with the input height */
+.search-btn {
+  flex: 0 0 auto;
+  font-weight: 500;
+  padding: .65rem .95rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color .15s ease,
+              border-color .15s ease,
+              box-shadow .15s ease,
+              opacity .15s ease;
+}
+
+.search-btn:focus-visible {
+  outline: none;
+}
+
+.search-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Results list */
+.search-results {
+  margin-top: .75rem;
+  display: grid;
+  gap: .75rem;
+}
+
+.search-item {
+  display: block;
+  border: 1px solid #e7e7e7;
+  /* border-radius: .75rem; */
+  padding: .75rem .9rem;
+  text-decoration: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.search-item:hover {
+  border-color: #bbd5e1;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  text-decoration: none;
+}
+
+.search-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  justify-content: space-between;
+}
+
+.search-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.search-kind {
+  font-size: .75rem;
+  line-height: 1;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: .2rem .45rem;
+  text-transform: uppercase;
+}
+
+.search-date {
+  font-size: .85rem;
+  margin: .15rem 0 .35rem;
+}
+
+.search-excerpt {
+  line-height: 1.45;
+}
+
+.search-empty {
+  padding: .75rem 0;
+}
+
+mark {
+  background: #fff2a8;
+}
+
+/* Small screens: stack input and button if cramped */
+@media (max-width: 520px) {
+  .search-bar-row {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}
